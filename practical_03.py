@@ -83,7 +83,7 @@ points_en = {1:'AEIOULNSTR',
       	3:'BCMP',
       	4:'FHVWY',
       	5:'K',
-      	8:'JZ',
+      	8:'JX',
       	10:'QZ'}
 points_ru = {1:'АВЕИНОРСТ',
       	2:'ДКЛМПУ',
