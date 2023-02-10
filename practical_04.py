@@ -11,8 +11,8 @@
 # 6 12
 #                Решение
 # import random
-# n = int(input("Кол-во элеентов первого множества: ")) 
-# m = int(input("Кол-во элеентов второго множества: "))
+# n = int(input("Кол-во элементов первого множества: ")) 
+# m = int(input("Кол-во элементов второго множества: "))
 # N = [random.randint(0,10) for _ in range(n)]
 # # N = [int(input()) for i in range(N)] # Вводим элементы массива c клавиатуры 
 # M = [random.randint(0,10) for _ in range(m)]
@@ -44,4 +44,21 @@
 # Пример
 # 4 -> 1 2 3 4
 # 9
+
+# Решение
+
+# import random
+# n = int(input("Кол-во кустов 'N': "))
+# a = int(input("Введите максимальное кол-во ягод на кусте 'a': "))
+# N = [random.randint(1,a) for _ in range(n)]
+# print("Кол-во ягод на каждом кусте:", *N)
+# m = 3
+# max = t = N[1-m] + N[2-m] + N[0]
+# for i in range(n-1):
+#     if i < n - 1:          
+#             t = t - N[i-(m-1)] + N[i + (m-2)]
+#             i += 1
+#             if t > max:
+#                 max = t
+# print("Максимальное кол-во ягод с трех кустов:", max)
 
